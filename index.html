@@ -1,0 +1,132 @@
+ <!DOCTYPE  html>
+<html>
+    <head>
+        <title>Homepages</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css" src="style.css" type="text/css"> 
+ >
+    </head>
+    <body>
+    	 
+<!--------- Header starts here ---------->
+    <div class="header">
+        <strong>Firekicks</strong>
+        <div class="menu" onclick="forw()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!--------- MENU ---------->
+        <aside class="aside">
+            <div>
+                <h1>MENU</h1>
+                <p><a href="index.html" onclick="back()">HOMEPAGE</a></p>
+                <p><a href="product.html" onclick="back()">SNEAKERS</a></p>
+                <p><a href="about.html" onclick="back()">ABOUT</a></p>
+                <p><a href="contact.html" onclick="back()">CONTACT US</a></p>
+            </div>
+        </aside>
+      
+
+        
+
+    </div>
+<!--------- Content starts here ---------->
+    <div style="padding-top:100px;">
+     <div class="cart" >  <img src="img/cart.jpg" width="50px" height="50px"></div>
+    <div class="inputbox" align="center">
+   <input type="text" class="input" placeholder="Search for products, brands..."/>
+  <button class="button" id="box" onclick="ad()"><i class="fa fa-search" name="Search">Search</button>  
+    </div><br />
+    <div align="center" class="section" alt="">
+        <h2><strong id="dan"> FIREKICKS.COM</strong> </h2><br />
+        <div class="image" position="absolute" >  <div class="container">
+    
+
+                 <div class="text"> <h1> Browse our firekicks collection for the<br> very best in custom shoes, sneakers, apparel, and accessories. <br>
+                    <a class="shopbtn" href="product.html">SHOP NOW &#8594</a> </h1> <br>
+                    
+                 </div>
+
+        <img src="img/kick4.jpg" align="center" width="80%" alt="">
+    </div>
+    <br>
+
+
+<!-------- Login form starts --------->
+     <div class="containerl">
+
+<img src="img/login3.jpg" width="50px" height="50px"><br>
+
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><br><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+<br>
+    <button class="subbtn" type="submit">Login</button>
+    <label><br>Remember me
+      <input type="checkbox" checked="checked" name="remember"> 
+    </label>
+  
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+   <br> <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+    </div>
+  
+
+  <!-------- Login form ends --------->
+     
+        <br /> 
+        <div class="section" id="contacts" align="center">
+            <h2><span>Follow Us</span></h2>
+            <div>
+                <a href="https://www.instagram.com/namkicks/ " target="_blank">
+                    <img alt="Instagram" src="https://i.pinimg.com/originals/66/41/c9/6641c94e15a0be37af49a4250386c03e.png" width="50" height="50">
+                </a>
+                <a href="">
+                    <img alt="Facebook" src="img/facebook.png" width="50" height="50"/>
+                </a>
+                   <a href="">
+                    <img alt="Twitter" src="img/download.png" width="50" height="50"/>
+                </a>
+            </div><br />
+        </div>
+        
+        <!-------- Footer starts ------->
+        
+        <div class="footer">
+            <h4>For more information </h4> 
+            <p>matengumatengu6@gmail.com</p>
+            <p>+24812343028 | +24816271301</p>
+            <p>Vineta, Franke str erf 75</p><br />
+        <div>
+            <p>Firekicks &copy; 2020. All rights reserved.</p>
+        </div>
+        </div>
+        </div>
+
+        <!-------- Footer ends ------->
+        <script>
+            function ad(){
+                alert("Search bar is currently not functional")
+            };
+            function back(){
+                var item = document.querySelector(".aside");
+                item.style.transform = "translateX(-100%)";
+            };
+            function forw(){
+                var item = document.querySelector(".aside");
+                item.style.transform = "translateX(0)";
+                setTimeout(() => {item.style.transform = "translateX(-100%)"}, 7000); 
+            };
+            function succ(){
+                alert("Your message has been succesfully sent!")
+            }
+        </script>
+    </body>
+</html>
