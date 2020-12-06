@@ -1,0 +1,158 @@
+ <!DOCTYPE  html>
+<html>
+    <head>
+        <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" src="style.css" type="text/css"> 
+   
+   
+</head>
+    </head>
+    <body>
+   
+    
+<!--------- Header starts here ---------->
+    <div class="header">
+        <strong>Firekicks</strong>
+        <div class="menu" onclick="forw()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
+        <aside class="aside">
+            <div>
+                <h1>MENU</h1>
+                <p><a href="index.html" onclick="back()">HOMEPAGE</a></p>
+                <p><a href="product.html" onclick="back()">SNEAKERS</a></p>
+                <p><a href="about.html" onclick="back()">ABOUT</a></p>
+                <p><a href="contact.html" onclick="back()">CONTACT US</a></p>
+            </div>
+        </aside>
+    </div>
+    <div style="padding-top:100px;">
+    	<div class="cart" >  <img src="img/cart.jpg" width="50px" height="50px"></div>
+    <div class="inputbox" align="center">
+   <input type="text" class="input" placeholder="Search for products, brands..."/>
+  <button class="button" id="box" onclick="ad()"><i class="fa fa-search" name="Search">Search</button>  
+    </div><br />
+    <div align="center" class="section" alt="">
+        <h2><strong id="dan"> Contact us</strong> </h2><br />
+        <img src="img/logos2.jpg" align="center" width="80" height="80" alt="">
+        <img src="img/logos3.svg" align="center" width="80" height="80" alt="">
+        <img src="img/logos4.svg" align="center" width="80" height="80" alt="">
+        <img src="img/logos5.jpg" align="center" width="80" height="80" alt="">
+        <img src="img/logos1.jpg" align="center" width="80" height="80" alt="">
+
+        <table>
+        	<tr>
+        		<th>Contact details</th>
+        		
+        		</tr>
+        	<tr>
+        		<td>Email: matengumatengu6@gmail.com</td>
+        	</tr>
+        		<tr>
+        		<td>Contact number: +24812343028 | +24816271301</td>
+        	</tr>
+        		<tr>
+        		<td>Vineta, Franke str erf 75</td>
+        	</tr>
+
+
+
+
+        	</table>
+        <p class="bord"><br />. </p>
+    </div><br />
+   
+
+
+
+
+
+
+
+        
+    <div class="section" id="div3" align="left">
+            <h2><span>Contact Us</span></h2>
+                 
+            <br /><form action="#" onsubmit="succ()">
+                <input id="input1" name="name" placeholder="Name" type="text" required /><br/>
+                <input id="input2" name="email" placeholder="Email" type="email" required /><br/>
+                <textarea id="input3" name="message" placeholder="Message" required ></textarea><br/>
+                <a href="matengumatengu6@gmail.com"><button type="submit" value="SEND" class="button" id="box" />Submit</button></a>
+            </form>
+        </div><br />
+
+ 
+
+
+
+
+
+
+
+
+
+
+        
+        <br /> 
+        <div class="section" id="contacts" align="center">
+            <h2><span>Follow Us</span></h2>
+            <div>
+                <a href="https://www.instagram.com/namkicks/ " target="_blank">
+                    <img alt="Instagram" src="https://i.pinimg.com/originals/66/41/c9/6641c94e15a0be37af49a4250386c03e.png" width="50" height="50">
+                </a>
+                <a href="https://www.facebook.com">
+                    <img alt="Facebook" src="img/facebook.png" width="50" height="50"/>
+                </a>
+                 </a>
+                   <a href="">
+                    <img alt="Twitter" src="img/download.png" width="50" height="50"/>
+                </a>
+            </div><br />
+        </div>
+        
+
+
+
+
+        
+        <div class="footer">
+            <h4>For more information </h4> 
+            <p>matengumatengu6@gmail.com</p>
+            <p>+24812343028 | +24816271301</p>
+            <p>Vineta, Franke str erf 75</p><br />
+        <div>
+            <p>Firekicks &copy; 2020. All rights reserved.</p>
+        </div>
+        </div>
+        </div>
+
+ 
+
+
+
+
+ 
+        <script>
+            function ad(){
+                alert("Search bar is currently not functional")
+            };
+            function back(){
+                var item = document.querySelector(".aside");
+                item.style.transform = "translateX(-100%)";
+            };
+            function forw(){
+                var item = document.querySelector(".aside");
+                item.style.transform = "translateX(0)";
+                setTimeout(() => {item.style.transform = "translateX(-100%)"}, 7000); 
+            };
+            function succ(){
+                alert("Your message has been succesfully sent!")
+            }
+        </script>
+    </body>
+</html>
